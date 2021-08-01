@@ -4,6 +4,7 @@ import com.tenax.server.exception.ResourceNotFoundException;
 import com.tenax.server.model.Server;
 import com.tenax.server.repository.ServerRepository;
 
+import com.tenax.server.service.ServerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,9 @@ public class ServerController {
     @Autowired
     private ServerRepository serverRepository;
 
+    @Autowired
+    private ServerService serverService;
+
     @CrossOrigin(origins = "*")
     @GetMapping()
     public List<Server> getAllServers(){
@@ -38,8 +42,8 @@ public class ServerController {
 
     @CrossOrigin(origins = "*")
     @PostMapping()
-    public Server createServer(@Valid @RequestBody Server server){
-        return serverRepository.save(server);
+    public ResponseEntity<Server> createServer(@Valid @RequestBody Server server){
+        return ResponseEntity.ok(serverService.createServer(server));
     }
 
     @PutMapping("/{id}")

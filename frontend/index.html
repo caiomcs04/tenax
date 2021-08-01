@@ -9,7 +9,6 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/style.css" />
     <script src="deleteServer.js"></script>
   </head>
   <body>
@@ -21,25 +20,27 @@
             <th scope="col">ID</th>
             <th scope="col">Nome</th>
             <th scope="col">Descrição</th>
-            <th class="col-2"></th>
+            <th class="col-1"></th>
+            <th class="col-1"></th>
           </tr>
         </thead>
         <tbody id="table-body"></tbody>
       </table>
     </section>
     <section class="container justify-content-left mt-2 col-8">
-      <a href="/newserver.html">
+      <a href="/newserve.html">
         <button type="button" class="btn btn-primary col-12 p-3">
           Novo Servidor
         </button>
       </a>
     </section>
-
+    <h2 class="text-center mt-3" id="servers"></h2>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="getServer.js"></script>
+    <script src="listServer.js"></script>
   </body>
 </html>
