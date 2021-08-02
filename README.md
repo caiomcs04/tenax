@@ -14,10 +14,10 @@
 
 > - Clone este projeto em sua maquina com o comando:
 > ```
-> 	git clone https://github.com/caiomcs04/meeting-room-manager.git
+> 	git clone https://github.com/caiomcs04/tenax.git
 > ```
 
-## Execution back-end in localhost
+## Execução do back-end em localhost
 
 > - Open **meeting-room-manager/back-end** folder using an IDE of your choice
 >
