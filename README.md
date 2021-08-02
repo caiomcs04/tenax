@@ -29,7 +29,7 @@
 >
 > - Change **JDBC URL** to **jdbc:h2:~/tenax-server**
 >
-> ![Captura de tela de 2021-07-03 13-24-10](https://user-images.githubusercontent.com/66964367/124360783-082acc80-dc02-11eb-944c-58aabe735d21.png)
+> ![Captura de tela de 2021-08-02 01-52-28](https://user-images.githubusercontent.com/66964367/127806082-16079875-9cbc-4348-b658-5a2885d9230f.png)
 >
 > - Then press conect to get access to memory bank
 >
