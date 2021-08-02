@@ -1,123 +1,86 @@
-# Nome do Projeto
+# Gerenciamento de Servidores
 
-Breve descrição (preferencialmente em um paragrafo) do projeto abordando o porque da sua criação, objetivo ou ideia de utilização.
+> Um gerenciador de servidores. O front-end foi feito com JS e estilizado com Bootstrap.
+>  O back-en foi feito em Java Maven e Spring-boot. Database hosteada em H2
 
-> Exemplo:
->
-> Este projeto visa ajudar diretamente os desenvolvedores, principalmente aqueles que não se sentem confortável com o inglês, na elaboração da descrição de seus projetos, fornecendo neste template uma base com tópicos, exemplos de como e o que colocar no README.md.
+## Pré-requisito
 
-## Pré-requisitos
-
-Informe aqui tudo que é obrigatório previamente já ter sido configurado/instalado no ambiente que será executado sua aplicação; exemplifique também como fazê-lo;
-
-> Exemplo (Para criar uma aplicação com React):
-> - **Node** com versão superior ou igual que 8.1 - [Node Donwload](https://nodejs.org/pt-br/download/)
-> - **NPM** com versão superior ou igual que 5.6 - [Npm Donwload](https://www.npmjs.com/package/download)
+> - Uma IDE a sua escolha
+> - **Node** with version greater than or equal to 8.1 - [Node Donwload](https://nodejs.org/pt-br/download/)
+> - **NPM**  with version greater than or equal to 5.6 - [Npm Donwload](https://www.npmjs.com/package/download)
+> - **Java** with version greater than or equal to 8 - [Java Donwload](https://www.java.com)
 
 ## Instalação
 
-A pergunta a ser respondida aqui é: "Quais comandos precisará outra pessoa fazer para conseguir configurar o seu projeto?"
+> - Clone este projeto em sua maquina com o comando:
+> ```
+> 	git clone https://github.com/caiomcs04/tenax.git
+> ```
 
-Recomendo configurar o seu projeto em uma outra pasta/ambiente e anotar aqui todos os passos necessários para a execução.
+## Execução do back-end em localhost
 
-> Exemplo:
+> - Abra a pasta **tenax/back-end** usando a IDE de sua escolha.
 >
-> Clone esse projeto em seu computador com o comando:
-> ```
-> 	git clone [Url do seu repositório]
-> ```
-> Acesse a pasta do projeto seu terminal:
-> ```
-> 	cd [Nome da pasta do seu Projeto]
-> ```
-> Já pasta da aplicação em seu terminal, digite o seguinte comando:
-> ```
-> 	yarn install
-> ```
-
-## Execução
-
-Esse é talvez o tópico mais importante, faça com atenção.
-
-Através das informações especificadas nele, outras pessoas poderam visualizar e testar o funcionamento da sua aplicação.
-
-> Exemplo: 
+> - Faça o build do maven em **pom.xml** caso sua IDE não o faça automaticamente.
 >
-> Após ter configurado o projeto e ter aguardado a instalação das dependencias de desenvolvimento, execute o comando:
-> ```
-> 	yarn start
-> ```
-> A aplicação estará disponível para visualização em seu navegador, caso isso não aconteça automaticamente abre o navegador no seguinte endereço: _localhost:3000_
-
-## Funcionalidades
-
-Imagine aqui que outra pessoa configurou e executou o seu projeto, apresente então as principais funcionalidade que seu projeto tem e onde encontrar, dessa forma ela vai conseguir testar e usar tudo o que foi desenvolvido.
-
-Você ao fazer isso evita que o usuário da aplicação, por não ter conhecimento, pule ou não veja o que seu projeto é capaz de fazer.
-
-> Exemplo: 
+> - Rode o arquivo ServerApplication(~/src/main/java/com/tenax/server)
 >
-> Este projeto visa a funcionalidade de ser: 
-> - Template de README.md em PORTUGUÊS - PTBR;
-> - Artigo explicando e exemplificando tópicos de documentação;
-
-
-## Testes
-
-Sua aplicação contempla testes? Se sim, explique como executar os testes automatizados para este sistema; você também pode anexar aqui as capturas de telas (prints) dos testes que você fez ou de um determinado comportamento da aplicação.
-
-Tipos de testes: 
-- Unitários
-- Performance
-- Segurança
-- Regressão
-
-Dentre outros...
-> Exemplo de comando para execução de testes em uma aplicação:
-> ```
-> 	yarn test
-> ```
-
-## Links
-
-Mesmo que as informações possam estar sendo apresentadas no seu código, pode ocorrer de algumas pessoas não terem total entendimento sobre o que foi proposto ou determinados termos técnicos, você pode incluir um resumo dos links mais úteis para leitura dessas termos, por exemplo.
-
-> Exemplo: 
-> - [Guia de Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
-> - [Como formatar o Readme?](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8#:~:text=md%20%C3%A9%20um%20arquivo%20markdown,tags%20tamb%C3%A9m%20funcionam%2C%20veremos%20adiante.&text=Basta%20copiar%20o%20que%20o,e%20colar%20no%20README.md.)
-
-
-## Contribuições
-
-Seu projeto pode receber contribuições da comunidade? Se sim, utilize esse tópico;
-aqui você coloca as informações resumidas de como a pessoa poderá o ajudar com o projeto.
-
-> Exemplo:
-> - Para contribuir com esse projeto, fork este projeto, faça as modificações que tens desejo e crie um pull request; veja as instruções detalhadas no arquivo _CONTRIBUTING.md_.
-
-## Autores
-
-Informe o nome das pessoas envolvidas no desenvolvimento do projeto e se quiser atribua as respectivas redes sociais para contato da comunidade;
-
-> Exemplo (Deste projeto):
-> - **Lucas Anderson Lima** - Idealizador e Escritor da Documentação - [Github](https://github.com/LuAnderson) | [Site](http://lucasanderson.com.br/)
-
-
-## Licença 
-
-Existem vários tipos de licença open souce, para saber qual condiz mais com o seu projeto e até mesmo entender mais detalhadamente, recomendo verificar os tipos no seguinte site: [Escolha uma Licença](http://escolhaumalicenca.com.br/).
-
-> Exemplo: 
+> - After starting the service go to [H2 memory bank](http://localhost:8088/h2)
+>
+> - Change **JDBC URL** to **jdbc:h2:~/tenax-server**
+>
+> ![Captura de tela de 2021-08-02 01-52-28](https://user-images.githubusercontent.com/66964367/127806082-16079875-9cbc-4348-b658-5a2885d9230f.png)
+>
+> - Then press conect to get access to memory bank
+>
+> - You can execute any crud using an API develoment plataform of your choice
+>
+> - Or you can use [Swagger](http://localhost:8085/swagger-ui.html#/) as well
 > 
-> MIT License (MIT)
+> ![Captura de tela de 2021-07-23 10-39-25](https://user-images.githubusercontent.com/66964367/126791647-975169c8-8ddc-4ba4-8607-ad394595d416.png)
 
-## Agradecimentos 
+## Installation Angular app
 
-Aqui, sinta-se a vontade a agradecer quem você desejar, tenha sido uma pessoa que a incentivou no projeto, inspirador, colaborador, amigos, etc.  
-
-> Exemplo: 
+>Access your terminal project folder:
+> ```
+> 	cd [Your Project folder name]
+> ```
+> Than access the **front-end** folder:
+> ```
+> 	cd [front-end]
+> ```
+> Already the application's folder in your terminal, type the following command to install the node-modules:
+> ```
+> 	npm install
+> ```
 > 
-> Comunidade Front <3
+## Execution
 
----
-Autor ❤ [Lucas Anderson Lima](http://lucasanderson.com.br/)
+>  When the installation is ready, start the front-end application with the command::
+> ```
+> 	ng s -o
+> ```
+>The application will be available for viewing in your browser, if this does not happen automatically open the browser at the following address: _localhost: 4200_
+
+
+## Functionalities
+
+> - Back-end
+> You will be able to test all functionalities in [Swagger](http://localhost:8085/swagger-ui.html#/) 
+> And also will be able to check the data base in [H2](http://localhost:8085/h2)
+
+> - Front-end
+> You will be able to execute all cruds.
+> Check all data, create it, update it and delete it.
+
+## Contribution
+
+> - To contribute to this project, fork this project, make the changes you want and create a pull request.
+
+## Authors
+
+> - **Caio Moreira de Carvalho Sampaio** - [Linkedin](https://www.linkedin.com/in/caio-sampaio-b02a3669/) | [Email](caio6c@yahoo.com.br)
+
+## Special thanks 
+
+> Digital Innovation One and Satander Bank for the fullstack scholarship opportunity
