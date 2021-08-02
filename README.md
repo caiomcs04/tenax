@@ -19,15 +19,15 @@
 
 ## Execução do back-end em localhost
 
-> - Open **meeting-room-manager/back-end** folder using an IDE of your choice
+> - Abra a pasta **tenax/back-end** usando a IDE de sua escolha.
 >
-> - Load marven changes in build.gradle file if your IDE doesn't do it automatically
+> - Faça o build do maven em **pom.xml** caso sua IDE não o faça automaticamente.
 >
-> - Run MeetingroomApplication(~/back-end/src/main/java/com/digital/crud/meetingroom/meetingroom)
+> - Rode o arquivo ServerApplication(~/src/main/java/com/tenax/server)
 >
-> - After starting the service go to [H2 memory bank](http://localhost:8085/h2)
+> - After starting the service go to [H2 memory bank](http://localhost:8088/h2)
 >
-> - Change **JDBC URL** to **jdbc:h2:~/meetingroom_db**
+> - Change **JDBC URL** to **jdbc:h2:~/tenax-server**
 >
 > ![Captura de tela de 2021-07-03 13-24-10](https://user-images.githubusercontent.com/66964367/124360783-082acc80-dc02-11eb-944c-58aabe735d21.png)
 >
