@@ -6,8 +6,6 @@
 ## Pré-requisito
 
 > - Uma IDE a sua escolha
-> - **Node** with version greater than or equal to 8.1 - [Node Donwload](https://nodejs.org/pt-br/download/)
-> - **NPM**  with version greater than or equal to 5.6 - [Npm Donwload](https://www.npmjs.com/package/download)
 > - **Java** with version greater than or equal to 8 - [Java Donwload](https://www.java.com)
 
 ## Instalação
@@ -25,62 +23,62 @@
 >
 > - Rode o arquivo ServerApplication(~/src/main/java/com/tenax/server)
 >
-> - After starting the service go to [H2 memory bank](http://localhost:8088/h2)
+> - Após iniciar o serviço vá para [H2 memory bank](http://localhost:8088/h2)
 >
-> - Change **JDBC URL** to **jdbc:h2:~/tenax-server**
+> - Altere a **JDBC URL** para **jdbc:h2:~/tenax-server**
 >
 > ![Captura de tela de 2021-08-02 01-52-28](https://user-images.githubusercontent.com/66964367/127806082-16079875-9cbc-4348-b658-5a2885d9230f.png)
 >
-> - Then press conect to get access to memory bank
+> - Então clique em **conect** para acessar ao banco de memória.
 >
-> - You can execute any crud using an API develoment plataform of your choice
+> - Você pode executar qualquer crud usando um API Client de sua escolha.
 >
-> - Or you can use [Swagger](http://localhost:8085/swagger-ui.html#/) as well
+> - Ou pode usar o [Swagger](http://localhost:8088/swagger-ui.html#/)
 > 
-> ![Captura de tela de 2021-07-23 10-39-25](https://user-images.githubusercontent.com/66964367/126791647-975169c8-8ddc-4ba4-8607-ad394595d416.png)
+> ![Captura de tela de 2021-08-02 01-58-05](https://user-images.githubusercontent.com/66964367/127806343-0dbf176f-fc3e-4836-89cb-d64fc2e4bd90.png)
 
-## Installation Angular app
+## Execução do front-end
 
->Access your terminal project folder:
-> ```
-> 	cd [Your Project folder name]
-> ```
-> Than access the **front-end** folder:
-> ```
-> 	cd [front-end]
-> ```
-> Already the application's folder in your terminal, type the following command to install the node-modules:
-> ```
-> 	npm install
-> ```
-> 
-## Execution
-
->  When the installation is ready, start the front-end application with the command::
-> ```
-> 	ng s -o
-> ```
->The application will be available for viewing in your browser, if this does not happen automatically open the browser at the following address: _localhost: 4200_
+>  - Abra a pasta **tenax/frontend** e execute o arquivo **index.html***.
+>  
+>  - ELe abrirá uma página em seu navegador.
+>  
+>  ![Captura de tela de 2021-08-02 02-09-42](https://user-images.githubusercontent.com/66964367/127807219-3f5516a9-e7b3-4267-81df-1588c0b6bc8c.png)
+>  
+>  - Para adicionar um novo servidor clique em **Novo Servidor** e adicione o servidor com os atributos que desejar.
+>  
+>  - ![Captura de tela de 2021-08-02 02-09-57](https://user-images.githubusercontent.com/66964367/127807345-26a71467-c1b5-491f-b101-90d856d4fd82.png)
+>  
+>  -**ATENÇÃO** Não é possível adicionar servidores com o mesmo nome.
+>   Caso queira mudar algo em um servidor ja existente Clique no botão **Editar** na página principal.
+>   
+>   ![Captura de tela de 2021-08-02 02-10-08](https://user-images.githubusercontent.com/66964367/127807489-90b7ead0-a778-4561-ba50-7e943f74f56a.png)
+>   
+>   - Para deletar um servidor basta clicar em **Deletar** na página principal.
 
 
-## Functionalities
+## Funcionalidades
 
 > - Back-end
-> You will be able to test all functionalities in [Swagger](http://localhost:8085/swagger-ui.html#/) 
-> And also will be able to check the data base in [H2](http://localhost:8085/h2)
+> Você será capaz de testar todas as funcionalidades em [Swagger](http://localhost:8085/swagger-ui.html#/) 
+> E também poderá checar seu banco de dados em [H2](http://localhost:8085/h2)
 
 > - Front-end
-> You will be able to execute all cruds.
-> Check all data, create it, update it and delete it.
+> Você poderá executar os cruds com uma interface mais amigável.
+> Checar a lista de servidores, criar servidores, edita-los e deleta-los.
 
-## Contribution
+## Contribuição
 
-> - To contribute to this project, fork this project, make the changes you want and create a pull request.
+> - Para contribuir com este projeto, use a ferramenta de fork, faça as alterações que achar necessárias e crie um pull request.
+
+## Futura Atualização
+
+> - Criar auditoria para o back-end.
 
 ## Authors
 
 > - **Caio Moreira de Carvalho Sampaio** - [Linkedin](https://www.linkedin.com/in/caio-sampaio-b02a3669/) | [Email](caio6c@yahoo.com.br)
 
-## Special thanks 
+## Agradecimento Especial 
 
-> Digital Innovation One and Satander Bank for the fullstack scholarship opportunity
+> Tenax pela oportunidade de participar de seu processo seletivo.
