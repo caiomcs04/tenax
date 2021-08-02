@@ -1,7 +1,7 @@
 # Gerenciamento de Servidores
 
-> Um gerenciador de servidores. O front-end foi feito com JS e estilizado com Bootstrap.
->  O back-en foi feito em Java Maven e Spring-boot. Database hosteada em H2
+> Um gerenciador de servidores criado com front-end feito com JS e estilizado com Bootstrap,
+>  e um back-en feito em Java Maven e Spring-boot. Database hosteada em H2
 
 ## Pré-requisito
 
