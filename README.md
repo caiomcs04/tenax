@@ -6,7 +6,7 @@
 ## Pré-requisito
 
 > - Uma IDE a sua escolha
-> - **Java** with version greater than or equal to 8 - [Java Donwload](https://www.java.com)
+> - **Java** na versão 8 ou maior- [Java Donwload](https://www.java.com)
 
 ## Instalação
 
