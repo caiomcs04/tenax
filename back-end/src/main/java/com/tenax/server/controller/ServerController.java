@@ -46,16 +46,10 @@ public class ServerController {
         return ResponseEntity.ok(serverService.createServer(server));
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity <Server> updateServer(@PathVariable(value = "id") Long serverId,
-                                              @Valid @RequestBody Server serverDetails) throws ResourceNotFoundException {
-        Server server = serverRepository.findById(serverId)
-                .orElseThrow(() -> new ResourceNotFoundException("Server not found for this id: " + serverId));
-
-        server.setName(server.getName());
-        server.setDescription(server.getDescription());
-        final Server updateServer = serverRepository.save(server);
-        return ResponseEntity.ok(updateServer);
+    @CrossOrigin(origins = "*")
+    @PutMapping()
+    public ResponseEntity<Server> update(@Valid @RequestBody Server server){
+        return ResponseEntity.ok(serverService.update(server));
     }
 
     @CrossOrigin(origins = "*")

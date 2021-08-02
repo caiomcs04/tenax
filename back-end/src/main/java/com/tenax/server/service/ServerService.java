@@ -21,9 +21,18 @@ public class ServerService {
     public Server createServer(Server server) {
         Optional<Server> optionalStock = repository.findByName(server.getName());
         if (optionalStock.isPresent()) {
-            throw new BusinessException(MessageUtils.STOCK_ALREADY_EXISTS);
+            throw new BusinessException(MessageUtils.SERVER_ALREADY_EXISTS);
         }
 
+        repository.save(server);
+        return server;
+    }
+
+    public Server update(Server server) {
+        Optional<Server> optionalStock = repository.findByServerUpdate(server.getName(), server.getId());
+        if(optionalStock.isPresent()){
+            throw new BusinessException(MessageUtils.SERVER_ALREADY_EXISTS);
+        }
         repository.save(server);
         return server;
     }
