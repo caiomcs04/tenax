@@ -53,7 +53,7 @@
 >   ![Captura de tela de 2021-08-02 02-09-57](https://user-images.githubusercontent.com/66964367/127807345-26a71467-c1b5-491f-b101-90d856d4fd82.png)
 >   
 >   
->  -**ATENÇÃO** Não é possível adicionar servidores com o mesmo nome.
+>  - **ATENÇÃO** Não é possível adicionar servidores com o mesmo nome.
 >   Caso queira mudar algo em um servidor ja existente Clique no botão **Editar** na página principal.
 >   
 >   ![Captura de tela de 2021-08-02 02-10-08](https://user-images.githubusercontent.com/66964367/127807489-90b7ead0-a778-4561-ba50-7e943f74f56a.png)
