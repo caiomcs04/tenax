@@ -11,7 +11,6 @@ function postServer() {
       description: description.value,
     })
   );
-  console.log(request)
   request.onload = function () {
     console.log(request.responseText.includes("already exist"))
 
@@ -23,7 +22,5 @@ function postServer() {
       }else{
         alert("Servidor não cadastrado")
       }
-      console.log(request)
-
   };
 }

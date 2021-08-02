@@ -14,7 +14,7 @@ function getServer() {
               <td style="width:25%">${serve.name}</td>
               <td>${serve.description}</td>
               <td>
-              <button type="button" class="btn btn-primary" onclick="deleteServer(${serve.id})">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#serverEdit" onclick="handleModal('${serve.name}','${serve.id}','${serve.description}')">
                   Editar
               </button>
               </td>
