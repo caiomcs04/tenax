@@ -47,10 +47,12 @@
 >  
 >  ![Captura de tela de 2021-08-02 02-09-42](https://user-images.githubusercontent.com/66964367/127807219-3f5516a9-e7b3-4267-81df-1588c0b6bc8c.png)
 >  
+>  
 >  - Para adicionar um novo servidor clique em **Novo Servidor** e adicione o servidor com os atributos que desejar.
 >  
->  - ![Captura de tela de 2021-08-02 02-09-57](https://user-images.githubusercontent.com/66964367/127807345-26a71467-c1b5-491f-b101-90d856d4fd82.png)
->  
+>   ![Captura de tela de 2021-08-02 02-09-57](https://user-images.githubusercontent.com/66964367/127807345-26a71467-c1b5-491f-b101-90d856d4fd82.png)
+>   
+>   
 >  -**ATENÇÃO** Não é possível adicionar servidores com o mesmo nome.
 >   Caso queira mudar algo em um servidor ja existente Clique no botão **Editar** na página principal.
 >   
