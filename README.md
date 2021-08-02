@@ -17,6 +17,8 @@
 
 ## Execução do back-end em localhost
 
+> - A porta utilizada foi 8088.
+>
 > - Abra a pasta **tenax/back-end** usando a IDE de sua escolha.
 >
 > - Faça o build do maven em **pom.xml** caso sua IDE não o faça automaticamente.
@@ -75,7 +77,7 @@
 
 > - Criar auditoria para o back-end.
 
-## Authors
+## Autor
 
 > - **Caio Moreira de Carvalho Sampaio** - [Linkedin](https://www.linkedin.com/in/caio-sampaio-b02a3669/) | [Email](caio6c@yahoo.com.br)
 
