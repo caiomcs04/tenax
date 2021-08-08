@@ -16,7 +16,7 @@ function postServer() {
 
       if(request.status === 200){
           alert("Servidor cadastrado")
-          window.location.replace("/index.html");
+          window.location.replace("index.html");
       }else if(request.responseText.includes("already exist")){
           alert("Servidor já existe. Favor cadastrar outro Servidor")
       }else{
