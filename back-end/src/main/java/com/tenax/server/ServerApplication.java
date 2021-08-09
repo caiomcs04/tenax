@@ -26,6 +26,7 @@ public class ServerApplication {
 	public static void main(String[] args) throws URISyntaxException, IOException {
 		SpringApplication.run(ServerApplication.class, args);
 			String url = "http://localhost:8088/servers.tenax";
+		String os = System.getProperty("os.name").toLowerCase();
 
 			if(Desktop.isDesktopSupported()){
 				Desktop desktop = Desktop.getDesktop();
@@ -38,8 +39,13 @@ public class ServerApplication {
 			}else{
 				Runtime runtime = Runtime.getRuntime();
 				try {
-					runtime.exec("xdg-open " + url);
-				} catch (IOException e) {
+					if(os.indexOf("win") >= 0){
+						runtime.exec("rundll32 url.dll,FileProtocolHandler " + url);
+					}else if(os.indexOf("nix") >=0 || os.indexOf("nux") >=0){
+						runtime.exec("xdg-open " + url);
+					}else if(os.indexOf("mac") >= 0){
+						runtime.exec("open " + url);
+					}				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
