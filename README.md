@@ -25,7 +25,7 @@
 >
 > - Rode o arquivo ServerApplication(~/src/main/java/com/tenax/server)
 > 
-> - Uma janela em seu navegador irá abrir com a interface [JSF](http://localhost:8088/server.tenax)
+> - Uma janela em seu navegador irá abrir com a interface [JSF](http://localhost:8088/servers.tenax)
 > 
 > ![Captura de tela de 2021-08-09 00-35-14](https://user-images.githubusercontent.com/66964367/128657947-65c5944f-389d-46eb-bae4-8bf1b32cf774.png)
 >
